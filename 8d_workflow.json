@@ -1,0 +1,19 @@
+{
+  "workflowName": "Standard 8D Process",
+  "steps": [
+    {
+      "id": "D1",
+      "title": "Team Zusammenstellen",
+      "description": "Team für Problemlösung benennen.",
+      "tasks": [
+        {
+          "id": "D1-04",
+          "title": "Leiter benennen",
+          "type": "judgement",
+          "skill": "H",
+          "agentSupport": true
+        }
+      ]
+    }
+  ]
+}
