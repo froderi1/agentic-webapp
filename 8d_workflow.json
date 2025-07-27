@@ -1,17 +1,53 @@
 {
   "workflowName": "Standard 8D Process",
+  "currentCase": {
+    "title": "Final Assembly Line Issue",
+    "errorImage": "Kabelbaum nicht korrekt am Karosserierahmen befestigt",
+    "detectionRate": "12 von 200 Einheiten betroffen (6%)",
+    "firstReport": "23. Juli 2025, Spätschicht",
+    "productionLine": "GLC Body & Wiring, Halle 3, Linie 2",
+    "risk": "Mögliche Fehlfunktion elektrischer Systeme"
+  },
   "steps": [
     {
-      "id": "D1",
+      "stepId": "D1",
       "title": "Team Zusammenstellen",
-      "description": "Team für Problemlösung benennen.",
       "tasks": [
         {
-          "id": "D1-04",
+          "taskId": "D1-01",
+          "title": "Problem validieren",
+          "description": "Überprüfe, ob das gemeldete Problem real und reproduzierbar ist.",
+          "duration": 20,
+          "skill": "M",
+          "type": "admin",
+          "agentSupport": true,
+          "status": "BEREIT"
+        },
+        {
+          "taskId": "D1-04",
           "title": "Leiter benennen",
-          "type": "judgement",
+          "description": "Wähle einen erfahrenen 8D-Leiter basierend auf Verfügbarkeit und Historie.",
+          "duration": 15,
           "skill": "H",
-          "agentSupport": true
+          "type": "judgement",
+          "agentSupport": false,
+          "status": "BEREIT"
+        }
+      ]
+    },
+    {
+      "stepId": "D2",
+      "title": "Problem beschreiben",
+      "tasks": [
+        {
+          "taskId": "D2-01",
+          "title": "Symptombeschreibung",
+          "description": "Erfasse alle relevanten Informationen zum Fehlerbild.",
+          "duration": 30,
+          "skill": "M",
+          "type": "expert",
+          "agentSupport": true,
+          "status": "BLOCKIERT"
         }
       ]
     }
